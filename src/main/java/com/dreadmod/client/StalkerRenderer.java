@@ -8,17 +8,16 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.feature.EyesFeatureRenderer;
 import net.minecraft.client.render.entity.feature.FeatureRendererContext;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
-import net.minecraft.client.render.entity.model.ZombieEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 /** Sagoma umanoide alta e allungata, con occhi rossi luminosi. */
-public class StalkerRenderer extends BipedEntityRenderer<StalkerEntity, ZombieEntityModel<StalkerEntity>> {
+public class StalkerRenderer extends BipedEntityRenderer<StalkerEntity, StalkerModel> {
     private static final Identifier TEXTURE = new Identifier(DreadMod.MOD_ID, "textures/entity/stalker.png");
     private static final Identifier EYES = new Identifier(DreadMod.MOD_ID, "textures/entity/stalker_eyes.png");
 
     public StalkerRenderer(EntityRendererFactory.Context ctx) {
-        super(ctx, new ZombieEntityModel<>(ctx.getPart(EntityModelLayers.ZOMBIE)), 0.5f);
+        super(ctx, new StalkerModel(ctx.getPart(EntityModelLayers.ZOMBIE)), 0.5f);
         this.addFeature(new EyesFeature(this));
     }
 
@@ -32,10 +31,10 @@ public class StalkerRenderer extends BipedEntityRenderer<StalkerEntity, ZombieEn
         matrices.scale(0.95f, 1.3f, 0.95f);
     }
 
-    private static class EyesFeature extends EyesFeatureRenderer<StalkerEntity, ZombieEntityModel<StalkerEntity>> {
+    private static class EyesFeature extends EyesFeatureRenderer<StalkerEntity, StalkerModel> {
         private static final RenderLayer LAYER = RenderLayer.getEyes(EYES);
 
-        EyesFeature(FeatureRendererContext<StalkerEntity, ZombieEntityModel<StalkerEntity>> context) {
+        EyesFeature(FeatureRendererContext<StalkerEntity, StalkerModel> context) {
             super(context);
         }
 
