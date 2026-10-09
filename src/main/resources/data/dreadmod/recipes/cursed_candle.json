@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:candle" },
+    { "item": "minecraft:soul_sand" }
+  ],
+  "result": { "item": "dreadmod:cursed_candle", "count": 1 }
+}

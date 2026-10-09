@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [" S ", "SSS", "SSS"],
+  "key": { "S": { "item": "minecraft:stone" } },
+  "result": { "item": "dreadmod:tombstone", "count": 1 }
+}

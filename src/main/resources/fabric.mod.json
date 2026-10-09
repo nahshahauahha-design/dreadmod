@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "dreadmod",
+  "version": "${version}",
+  "name": "Dread",
+  "description": "Una mod horror completa: lo Stalker che ti osserva dal buio, un sistema di paura/sanità mentale, allucinazioni sonore, Notti del Terrore, candele maledette, lapidi e amuleti sacri.",
+  "authors": ["Tu"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.dreadmod.DreadMod"],
+    "client": ["com.dreadmod.client.DreadModClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

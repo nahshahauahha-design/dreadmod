@@ -1,0 +1,24 @@
+{
+  "textures": {
+    "all": "dreadmod:block/tombstone",
+    "particle": "dreadmod:block/tombstone"
+  },
+  "elements": [
+    {
+      "from": [2, 0, 4], "to": [14, 3, 12],
+      "faces": {
+        "north": { "texture": "#all" }, "south": { "texture": "#all" },
+        "east":  { "texture": "#all" }, "west":  { "texture": "#all" },
+        "up":    { "texture": "#all" }, "down":  { "texture": "#all" }
+      }
+    },
+    {
+      "from": [4, 3, 6], "to": [12, 14, 10],
+      "faces": {
+        "north": { "texture": "#all" }, "south": { "texture": "#all" },
+        "east":  { "texture": "#all" }, "west":  { "texture": "#all" },
+        "up":    { "texture": "#all" }, "down":  { "texture": "#all" }
+      }
+    }
+  ]
+}

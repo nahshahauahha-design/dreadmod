@@ -1,0 +1,29 @@
+{
+  "textures": {
+    "all": "dreadmod:block/cursed_candle",
+    "particle": "dreadmod:block/cursed_candle"
+  },
+  "elements": [
+    {
+      "from": [6, 0, 6], "to": [10, 9, 10],
+      "faces": {
+        "north": { "uv": [6, 7, 10, 16], "texture": "#all" },
+        "south": { "uv": [6, 7, 10, 16], "texture": "#all" },
+        "east":  { "uv": [6, 7, 10, 16], "texture": "#all" },
+        "west":  { "uv": [6, 7, 10, 16], "texture": "#all" },
+        "up":    { "uv": [0, 0, 4, 4],   "texture": "#all" },
+        "down":  { "uv": [0, 0, 4, 4],   "texture": "#all" }
+      }
+    },
+    {
+      "from": [7.5, 9, 7.5], "to": [8.5, 11, 8.5], "shade": false,
+      "faces": {
+        "north": { "uv": [12, 0, 13, 2], "texture": "#all" },
+        "south": { "uv": [12, 0, 13, 2], "texture": "#all" },
+        "east":  { "uv": [12, 0, 13, 2], "texture": "#all" },
+        "west":  { "uv": [12, 0, 13, 2], "texture": "#all" },
+        "up":    { "uv": [12, 0, 13, 1], "texture": "#all" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "dreadmod:block/tombstone" },
+    "facing=east":  { "model": "dreadmod:block/tombstone", "y": 90 },
+    "facing=south": { "model": "dreadmod:block/tombstone", "y": 180 },
+    "facing=west":  { "model": "dreadmod:block/tombstone", "y": 270 }
+  }
+}
